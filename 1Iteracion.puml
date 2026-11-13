@@ -1,0 +1,39 @@
+@startuml
+hide empty members
+skinparam classBackgroundColor white
+skinparam classBorderColor black
+
+class Universidad
+class GradoUniversitario
+class Alumni
+class Administrador
+class Empresa
+class OfertaEmpleo
+class TrayectoriaProfesional
+class ExperienciaLaboral
+class GrupoInteres
+class Publicacion
+class Foro
+class Evento
+
+Universidad *-- "1..*" GradoUniversitario : imparte >
+Universidad *-- "1..*" Administrador : emplea >
+
+GradoUniversitario "1" <-- "1..*" Alumni : titulado en <
+
+Alumni *-- "1" TrayectoriaProfesional : posee >
+TrayectoriaProfesional *-- "0..*" ExperienciaLaboral : compuesta por >
+ExperienciaLaboral "0..*" --> "1" Empresa : desarrollada en >
+
+Empresa "1" --> "0..*" OfertaEmpleo : publica >
+Alumni "0..*" --> "0..*" OfertaEmpleo : postula a >
+
+Alumni "0..*" --> "0..*" Alumni : conecta con / mensajea >
+
+Alumni "0..*" o-- "0..*" GrupoInteres : pertenece a >
+Alumni "1" --> "0..*" Publicacion : crea >
+Foro *-- "0..*" Publicacion : contiene >
+
+Administrador "1" --> "0..*" Evento : gestiona >
+Alumni "0..*" --> "0..*" Evento : asiste a >
+@enduml
