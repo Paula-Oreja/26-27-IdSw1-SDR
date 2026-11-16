@@ -4,7 +4,7 @@
 ## 1. Información de general de la sesión
 
 1. Fecha y hora de inicio: 2026-11-04 12:45
-2. Equipo: Paula Oreja, Bamba Niang, Miguel Gómez, Bamba Ngiegen, José Melgares, Miguel Rojas
+2. Equipo: Paula Oreja, Bamba Niang, Miguel Gómez, Bamba Ngiegen, José Melgares, Miguel Rojas , Mario Osorio
 3. Cliente: Jesús Peña
 4. Modalidad: Presencial
 
