@@ -1,191 +1,86 @@
-
 @startuml
-title Plataforma Alumni UNEATLANTICO - Modelo del Dominio - Iteracion 3
+title Plataforma Alumni UNEATLANTICO - Modelo del Dominio
 
-left to right direction
+top to bottom direction
 hide empty members
 
+skinparam backgroundColor white
 skinparam classBackgroundColor white
 skinparam classBorderColor black
 skinparam classAttributeIconSize 0
 skinparam linetype polyline
-skinparam packageStyle rectangle
 skinparam shadowing false
+skinparam nodesep 55
+skinparam ranksep 75
 
-package "Comunidad universitaria" {
+' CLASES PRINCIPALES
 
-    class Universidad
-    class Alumni
-    class Titulacion
-    class Promocion
-    class PerfilProfesional
-    class Formacion
-    class Certificacion
-    class Idioma
-    class InteresProfesional
-    class Pais
+class Universidad
+class Alumni
+class Empresa
 
-}
+' SEGUNDO NIVEL
 
-package "Ambito social" {
+class Titulacion
+class PerfilProfesional
+class ComunidadAlumni
+class Evento
+class OfertaEmpleo
+class Administrador
 
-    class ComunidadAlumni
-    class Evento
-    class ParticipacionEvento
-    class ResponsableAlumni
-    class ContactoAlumni
+' TERCER NIVEL
 
-}
+class Curriculum
+class ExperienciaLaboral
+class Candidatura
+class Contratacion
 
-package "Ambito laboral" {
+' RELACIONES UNIVERSIDAD
 
-    class Empresa
-    class OfertaEmpleo
-    class Candidatura
-    class Curriculum
-    class ExperienciaLaboral
-    class Contratacion
-    class SeguimientoEmpresa
+Universidad -- Titulacion : ofrece
+Universidad -- Administrador : cuenta con
 
-}
+Alumni -- Titulacion : ha cursado
 
-package "Servicios Alumni" {
+' RELACIONES ALUMNI
 
-    class Servicio
-    class Suscripcion
+Alumni -- PerfilProfesional : dispone de
+Alumni -- ComunidadAlumni : pertenece a
+Alumni -- Evento : participa en
 
-}
+' PERFIL PROFESIONAL
 
-package "Gestion universitaria" {
+PerfilProfesional -- ExperienciaLaboral : incluye
+Alumni -- Curriculum : dispone de
 
-    class Administrador
-    class SolicitudEmpresa
-    class RevisionOferta
-    class Incidencia
-    class AutorizacionDatos
+' PARTE SOCIAL
 
-}
+ComunidadAlumni -- Evento : organiza
 
-' ==========================================
-' COMUNIDAD UNIVERSITARIA
-' ==========================================
+' PARTE LABORAL
 
-Universidad "1" -- "0..*" Titulacion : ofrece
+Empresa -- OfertaEmpleo : propone
+Alumni -- Candidatura : presenta
+OfertaEmpleo -- Candidatura : recibe
+Candidatura -- Contratacion : puede originar
 
-Universidad "1" -- "0..*" Alumni : comunidad de
-
-Alumni "0..*" -- "1..*" Titulacion : ha cursado
-
-Alumni "0..*" -- "0..*" Promocion : pertenece a
-
-Alumni "0..*" -- "1" Pais : reside en
-
-Alumni "1" *-- "0..1" PerfilProfesional : dispone de
-
-PerfilProfesional "1" -- "0..*" Formacion : incluye
-
-PerfilProfesional "1" -- "0..*" Certificacion : incluye
-
-PerfilProfesional "1" -- "0..*" Idioma : acredita
-
-PerfilProfesional "0..*" -- "0..*" InteresProfesional : tiene
-
-PerfilProfesional "1" -- "0..*" ExperienciaLaboral : recoge
-
-ExperienciaLaboral "0..*" --> "0..1" Empresa : desarrollada en
-
-' ==========================================
-' SERVICIOS
-' ==========================================
-
-Alumni "1" -- "0..*" Suscripcion : realiza
-
-Servicio "1" -- "0..*" Suscripcion : corresponde a
-
-Universidad "1" -- "0..*" Servicio : ofrece
-
-' ==========================================
-' AMBITO SOCIAL
-' ==========================================
-
-ComunidadAlumni "0..*" -- "0..*" Alumni : agrupa
-
-ComunidadAlumni "0..*" -- "0..1" Titulacion : asociada a
-
-ComunidadAlumni "0..*" -- "0..1" Promocion : asociada a
-
-ComunidadAlumni "0..*" -- "0..1" Pais : asociada a
-
-Universidad "1" -- "0..*" Evento : promueve
-
-ComunidadAlumni "0..1" -- "0..*" Evento : organiza actividades
-
-Alumni "1" -- "0..*" ParticipacionEvento : participa mediante
-
-Evento "1" -- "0..*" ParticipacionEvento : registra
-
-Alumni <|-- ResponsableAlumni
-
-ResponsableAlumni "0..*" -- "0..*" Evento : organiza
-
-Universidad "1" -- "0..*" ResponsableAlumni : designa
-
-Alumni "1" -- "0..*" ContactoAlumni : solicita
-
-ContactoAlumni "0..*" -- "1" Alumni : destinatario
-
-' ==========================================
-' AMBITO LABORAL
-' ==========================================
-
-Empresa "1" -- "0..*" OfertaEmpleo : propone
-
-OfertaEmpleo "0..*" -- "0..*" InteresProfesional : relacionada con
-
-Alumni "1" -- "0..*" Candidatura : presenta
-
-OfertaEmpleo "1" -- "0..*" Candidatura : recibe
-
-Alumni "1" -- "0..*" Curriculum : dispone de
-
-Candidatura "0..*" --> "0..1" Curriculum : incorpora
-
-Candidatura "1" -- "0..1" Contratacion : puede originar
-
-Empresa "1" -- "0..*" Contratacion : realiza
-
-Alumni "1" -- "0..*" Contratacion : es contratado
-
-Alumni "0..*" -- "0..*" Empresa : sigue
-
-Alumni "0..*" -- "0..*" Empresa : esta vinculado a
-
-Empresa "1" -- "0..*" SeguimientoEmpresa : registra resultados
-
-' ==========================================
 ' GESTION UNIVERSITARIA
-' ==========================================
 
-Universidad "1" -- "0..*" Administrador : cuenta con
+Administrador -- OfertaEmpleo : revisa
 
-Empresa "1" -- "1" SolicitudEmpresa : solicita incorporacion
+' ORGANIZACION VISUAL
 
-Administrador "0..1" -- "0..*" SolicitudEmpresa : revisa
+Universidad -[hidden]right- Alumni
+Alumni -[hidden]right- Empresa
 
-OfertaEmpleo "1" -- "0..*" RevisionOferta : pasa por
+Titulacion -[hidden]right- PerfilProfesional
+PerfilProfesional -[hidden]right- ComunidadAlumni
+ComunidadAlumni -[hidden]right- Evento
+Evento -[hidden]right- OfertaEmpleo
 
-Administrador "1" -- "0..*" RevisionOferta : realiza
-
-Administrador "0..1" -- "0..*" Incidencia : registra
-
-Incidencia "0..*" -- "1" Alumni : afecta a
-
-Alumni "1" -- "0..*" AutorizacionDatos : concede
-
-AutorizacionDatos "0..*" -- "1" Empresa : autoriza comunicacion a
-
-AutorizacionDatos "0..*" -- "0..1" Candidatura : asociada a
+Curriculum -[hidden]right- ExperienciaLaboral
+ExperienciaLaboral -[hidden]right- Candidatura
+Candidatura -[hidden]right- Contratacion
 
 @enduml
-
 
