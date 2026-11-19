@@ -1,0 +1,37 @@
+@startuml
+
+Universidad : imagen y ventajas
+Titulacion : Grado, máster o doctorado
+Administrador : Gestiona la plataforma
+Alumni : Datos personales y carnet
+Privacidad : Quién puede ver mi perfil
+Trayectoria : Resumen de mi currículum
+Experiencia : Trabajo, puesto y fechas
+Empresa : Negocio propio o externo
+OfertaEmpleo : Puesto vacante y sueldo
+GrupoInteres : Grupo por tema o carrera
+Foro : Espacio de debate y dudas
+Publicacion : Mensaje o comentario
+Evento : Charlas y reencuentros
+
+Universidad --> Titulacion : ofrece
+Universidad --> Administrador : tiene
+Titulacion <-- Alumni : estudió
+
+Alumni --> Privacidad : elige
+Alumni --> Trayectoria : tiene
+Trayectoria --> Experiencia : incluye
+Experiencia --> Empresa : trabajó en
+
+Alumni --> Empresa : crea o dirige
+Empresa --> OfertaEmpleo : publica
+Alumni --> OfertaEmpleo : se apunta a
+
+Alumni --> GrupoInteres : entra en
+GrupoInteres --> Foro : tiene
+Foro --> Publicacion : guarda
+Alumni --> Publicacion : escribe
+
+Administrador --> Evento : organiza
+Alumni --> Evento : va a
+@enduml
