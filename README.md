@@ -6,9 +6,14 @@ Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta d
 
 <div align=center>
 
-| |Grupo|Estadísticas|Entrega oficial|
-|-|-|:-:|:-:|
-
+| |Coordinador|Cliente|Estadísticas|
+|-|-|-|:-:|
+|1|@Angelo2272| |[👁️](https://github.com/Angelo2272/26-27-IdSw1-SDR) / 📒
+|2|@Raultascon| |[👁️](https://github.com/Raultascon/26-27-IdSw1-SDR) / 📒
+|3|@vanepakk| |[👁️](https://github.com/vanepakk/26-27-IdSw1-SDR) / 📒
+|4|@Alejandracuesta| |[👁️](https://github.com/Alejandracuesta/26-27-IdSw1-SDR) / 📒
+|5|@Silviamontes43| |[👁️](https://github.com/Silviamontes43/26-27-IdSw1-SDR) / 📒
+|6|@Paula-Oreja| |[👁️](https://github.com/Paula-Oreja/26-27-IdSw1-SDR) / 📒
 
 </div>
 
@@ -30,4 +35,4 @@ Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta d
 - Reuniones extra: de acuerdo a lo pautado con el cliente.
 - Se recomienda utilizar el repo del coordinador del grupo y las herramientas de GitHub para gestionar las reuniones y comunicaciones con el cliente, haciendo racional uso de la trazabilidad.
 - Las imágenes, en la medida de lo posible en formato plantUML. 
-  - Todas las fuentes en la carpeta modelosUML y las imágenes exportadas, en formato svg.# 26-27-IdSw1-SDR
+  - Todas las fuentes en la carpeta modelosUML y las imágenes exportadas, en formato svg.
