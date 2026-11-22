@@ -49,5 +49,5 @@
 * **Contactar con la empresa:** Permitir la recepción de mensajes directos o solicitudes de contacto por parte de los alumnos.
 
 
-![Diagrama de Casos de Uso](./img/Casouso1.png)
-![Diagrama de Casos de Uso](./img/Casouso2.png)s
+![Diagrama de Casos de Uso](../recursos/imagenes/Casouso1.png)
+![Diagrama de Casos de Uso](../recursos/imagenes/Casouso2.png)
