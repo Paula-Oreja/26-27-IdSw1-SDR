@@ -1,38 +1,70 @@
-# Sesiones de requisitado
+<div align="right">
 
-Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO.
-
-Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
-
-<div align=center>
-
-| |Coordinador|Cliente|Estadísticas|
-|-|-|-|:-:|
-|1|@Angelo2272| |[👁️](https://github.com/Angelo2272/26-27-IdSw1-SDR) / 📒
-|2|@Raultascon| |[👁️](https://github.com/Raultascon/26-27-IdSw1-SDR) / 📒
-|3|@vanepakk| |[👁️](https://github.com/vanepakk/26-27-IdSw1-SDR) / 📒
-|4|@Alejandracuesta| |[👁️](https://github.com/Alejandracuesta/26-27-IdSw1-SDR) / 📒
-|5|@Silviamontes43| |[👁️](https://github.com/Silviamontes43/26-27-IdSw1-SDR) / 📒
-|6|@Paula-Oreja| |[👁️](https://github.com/Paula-Oreja/26-27-IdSw1-SDR) / 📒
+[![Modelo de Dominio](https://img.shields.io/badge/-Modelo%20de%20Dominio-FFF?style=flat&logo=diagramsdotnet&logoColor=black)](docs/modeloDeDominio)
+[![Casos de Uso](https://img.shields.io/badge/-Casos%20de%20Uso-FFF?style=flat&logo=blueprint&logoColor=black)](docs/casosDeUso)
+[![Prototipos](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=figma&logoColor=black)](docs/casosDeUso/prototipos/PrimerBorrador.md)
+[![Sesiones de Requisitado](https://img.shields.io/badge/-Sesiones%20de%20Requisitado-FFF?style=flat&logo=readthedocs&logoColor=black)](docs/sesiones)
+[![Recursos Adicionales](https://img.shields.io/badge/-Recursos%20Adicionales-FFF?style=flat&logo=gitbook&logoColor=black)](docs/recursos)
+[![Uso de IA](https://img.shields.io/badge/-Uso%20de%20IA-FFF?style=flat&logo=probot&logoColor=black)](IA-Uso.md)
 
 </div>
 
-> Se ha demostrado, empírica y académicamente, que un porcentaje no menor de proyectos de software que fracasan lo hacen porque está mal llevada esta fase.
+<div align="center">
 
-<div align=center>
+<img src="docs/recursos/imagenes/logo-alumni.png" alt="Logotipo Proyecto Alumni UNEATLANTICO" width="320" />
 
-||
-|-|
-![](https://raw.githubusercontent.com/mmasias/23-24-IdSw1-SDR/main/imagenes/modelosUML/trabajoRepos.svg)
+# Plataforma Alumni
+
+**Universidad Europea del Atlántico (UNEATLANTICO)** · Ingeniería del Software I · Curso 2026–2027 · Grupo 6
 
 </div>
 
-## Algunas reglas
+---
 
-- Reuniones oficiales (en horas de clase)
-  - A estas debe asistir el 100% de los integrantes de los grupos.
-  - Si a las reuniones asiste menos del 80% del grupo, la reunión se cancela y el grupo se da por cerrado. La evaluación se realiza de la forma tradicional (examen parcial, examen final).
-- Reuniones extra: de acuerdo a lo pautado con el cliente.
-- Se recomienda utilizar el repo del coordinador del grupo y las herramientas de GitHub para gestionar las reuniones y comunicaciones con el cliente, haciendo racional uso de la trazabilidad.
-- Las imágenes, en la medida de lo posible en formato plantUML. 
-  - Todas las fuentes en la carpeta modelosUML y las imágenes exportadas, en formato svg.
+## Descripción del Proyecto
+
+**Alumni** es el proyecto de ingeniería de requisitos desarrollado por el **Grupo 6** en la asignatura de *Ingeniería del Software I* de la **Universidad Europea del Atlántico**.
+
+Su propósito es diseñar una plataforma digital orientada a mantener la **vinculación y el seguimiento de los antiguos alumnos** de la universidad, integrando:
+
+- **Módulo laboral y de empleabilidad:** perfil profesional, currículum, gestión de empresas, publicación de ofertas de empleo y seguimiento de candidaturas.
+- **Módulo social y comunidad:** eventos universitarios, grupos de interés, foros, publicaciones y red de antiguos alumnos.
+- **Privacidad y administración:** control granular de visibilidad y consentimiento de datos, gestión de perfiles y métricas de actividad para la institución.
+
+---
+
+## Cliente
+
+- **Jesús Peña — Universidad Europea del Atlántico**
+
+---
+
+## Equipo de Trabajo
+
+| Integrante | GitHub |
+| :--- | :--- |
+| **Paula Oreja (Coordinadora)** | [@Paula-Oreja](https://github.com/Paula-Oreja) |
+| **Alexis Espino** | [@alexisef23](https://github.com/alexisef23) |
+| **Elhadji Niang** | [@elhadjiniang646](https://github.com/elhadjiniang646) |
+| **José Melgares** | [@fogg928s4](https://github.com/fogg928s4) |
+| **Mario Osorio** | [@Maritoz](https://github.com/Maritoz) |
+| **Miguel Gómez** | [@miguelgomz](https://github.com/miguelgomz) |
+| **Miguel Rojas** | [@MiguelRojas-1](https://github.com/MiguelRojas-1) |
+
+---
+
+## Documentación del Proyecto
+
+| Sección | Contenido | Enlace |
+| :--- | :--- | :--- |
+| **Sesiones de Requisitado** | Minutas y acuerdos de las reuniones con el cliente (Sesiones 001–003) | [Ver sesiones](docs/sesiones) |
+| **Modelo de Dominio** | Diagramas y prototipos del modelo conceptual de Alumni | [Ver modelo de dominio](docs/modeloDeDominio) |
+| **Casos de Uso** | Diagramas de estados  y prototipos | [Ver casos de uso](docs/casosDeUso) |
+| **Recursos Adicionales** | Preguntas de requisitado e imágenes de apoyo | [Ver recursos](docs/recursos) |
+| **Uso de IA** | Registro y declaración del uso de herramientas de IA en el proyecto | [Ver IA-Uso.md](IA-Uso.md) |
+
+### Registro de Sesiones
+
+- [Sesión 001 — Contacto inicial e identificación del problema (04/11/2026)](docs/sesiones/Sesion-001/Minuta-001.md)
+- [Sesión 002 — Definición funcional, perfiles y privacidad (11/11/2026)](docs/sesiones/Sesion-002/Minuta-002.md)
+- [Sesión 003 — Validación de casos de uso, dominio y métricas (18/11/2026)](docs/sesiones/Sesion-003/Minuta-003.md)
