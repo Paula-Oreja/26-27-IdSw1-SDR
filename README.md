@@ -15,7 +15,7 @@
 
 # Plataforma Alumni
 
-**Universidad Europea del Atlántico (UNEATLANTICO)** · Ingeniería del Software I · Curso 2026–2027 · Grupo 6
+**Universidad Europea del Atlántico** · Ingeniería del Software I · Curso 2026–2027 · Grupo 6
 
 </div>
 
@@ -23,9 +23,9 @@
 
 ## Descripción del Proyecto
 
-**Alumni** es el proyecto de ingeniería de requisitos desarrollado por el **Grupo 6** en la asignatura de *Ingeniería del Software I* de la **Universidad Europea del Atlántico**.
+**Alumni** es un proyecto de ingeniería de requisitos desarrollado por el nuestro grupo en la asignatura de *Ingeniería del Software I* de la **Universidad Europea del Atlántico**.
 
-Su propósito es diseñar una plataforma digital orientada a mantener la **vinculación y el seguimiento de los antiguos alumnos** de la universidad, integrando:
+El objetivo del proyecto es diseñar una plataforma digital orientada a mantener la **vinculación y el seguimiento de los antiguos alumnos** de la universidad, integrando:
 
 - **Módulo laboral y de empleabilidad:** perfil profesional, currículum, gestión de empresas, publicación de ofertas de empleo y seguimiento de candidaturas.
 - **Módulo social y comunidad:** eventos universitarios, grupos de interés, foros, publicaciones y red de antiguos alumnos.
