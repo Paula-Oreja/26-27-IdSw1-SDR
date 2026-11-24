@@ -23,7 +23,7 @@
 
 ## Descripción del Proyecto
 
-**Alumni** es un proyecto de ingeniería de requisitos desarrollado por el nuestro grupo en la asignatura de *Ingeniería del Software I* de la **Universidad Europea del Atlántico**.
+**Alumni** es un proyecto de ingeniería de software I desarrollado por nuestro grupo  en la **Universidad Europea del Atlántico**.
 
 El objetivo del proyecto es diseñar una plataforma digital orientada a mantener la **vinculación y el seguimiento de los antiguos alumnos** de la universidad, integrando:
 
